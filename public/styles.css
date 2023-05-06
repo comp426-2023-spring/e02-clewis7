@@ -1,8 +1,19 @@
-body {
+.content, .help_page {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    max-width: fit-content;
 }
 
 h1 {
+    text-align: center;
 }
 
-p {
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    margin: 10px;
 }
