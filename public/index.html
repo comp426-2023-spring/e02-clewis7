@@ -10,9 +10,9 @@
     <!-- beginning of the stuff you can see -->
     <body>
         <nav>
-            <button id="homenav" onclick="homeNav()" class="active">Home</button>
-            <button id="helpnav" onclick="helpNav()">Help</button>
-            <button id="reset" onclick="reset()" class="active">Reset</button>
+            <button id="homenav" onclick="homeNav()" type="button" class="active">Home</button>
+            <button id="helpnav" onclick="helpNav()" type="button">Help</button>
+            <button id="reset" onclick="reset()" type="button" class="active">Reset</button>
         </nav>
         <div class="container">
             <div id="home" class="active">
@@ -38,7 +38,7 @@
                     <label for="opps">Opponent</label><br>
                     <input type="radio" id="no-opponent" name="opp" value="no-opponent">
                     <label for="no-opponent">Random Draw</label><br><br>
-                    <button type="button" onclick="getGame()">Submit</button>
+                    <button type="submit" onclick="getGame()">Submit</button>
                 </form><br>
             </div>
             <div id="disp2" class="inactive">
@@ -59,7 +59,7 @@
                     <label for="paper">Paper</label><br>
                     <input type="radio" id="scissors" name="player" value="scissors">
                     <label for="scissors">Scissors</label><br>
-                    <button type="button" onclick="getOpp()">Submit</button>
+                    <button type="submit" onclick="getOpp()">Submit</button>
                 </form><br>
             </div>
 
@@ -75,7 +75,7 @@
                     <label for="lizard">Lizard</label><br>
                     <input type="radio" id="spock" name="player2" value="spock">
                     <label for="spock">Spock</label><br>
-                    <button type="button" onclick="getOpp()">Submit</button>
+                    <button type="submit" onclick="getOpp()">Submit</button>
                 </form><br>
             </div>
 
@@ -83,25 +83,19 @@
                 <h1>Result</h1>
             </div>
 
-            <div id="result5" class="inactive">
-            
-            </div>
+            <div id="result5" class="inactive"></div>
 
             <div id="result6" class="inactive">
                 <h2>Player:</h2>
             </div>
 
-            <div id="result2" class="inactive">
-            
-            </div>
+            <div id="result2" class="inactive"></div>
 
             <div id="result3" class="inactive">
                 <h2>Opponent:</h2>
             </div>
 
-            <div id="result4" class="inactive">
-            
-            </div>
+            <div id="result4" class="inactive"></div>
 
             <div id="help" class="inactive">
                 <h2>Rules for Rock Paper Scissors:</h2>

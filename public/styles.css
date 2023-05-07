@@ -9,15 +9,3 @@ div.active {
 div.inactive {
       display: none;
     }
-
-.h2{
-    font-size: 40;
-}
-
-.h3{
-    font-size: 50;
-}
-
-.h1{
-    font-size: 10;
-}
