@@ -1,0 +1,11 @@
+body {
+    background-color: lightblue;
+}
+
+div.active {
+      display: block;
+    }
+    /* This hides the inactive divs */
+div.inactive {
+      display: none;
+    }

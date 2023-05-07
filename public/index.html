@@ -10,11 +10,18 @@
     <!-- beginning of the stuff you can see -->
     <body>
         <nav>
+            <button id="homenav" onclick="homeNav()" class="active">Home</button>
             <button id="helpnav" onclick="helpNav()">Help</button>
         </nav>
-        <div>
-            <h1>Welcome to Rock Paper Scissors (Lizard Spock)</h1>
-            <p>If you have any questions about how the game is played, please click the help button.</p>
+        <div class="container">
+            <div id="home" class="active">
+                <h1>Welcome to Rock Paper Scissors (Lizard Spock)</h1>
+                <p>If you have any questions about how the game is played, please click the help button.</p>
+            </div>
+            <div id="help" class="inactive">
+                <h2>Rules Rock Paper Scissors</h2>
+                <h3>Rules Rock Paper Scissors Lizard Spock</h3>
+            </div>  
         </div>
     </body>
 
