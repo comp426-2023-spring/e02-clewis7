@@ -5,79 +5,13 @@
         <meta charset="utf-8">
         <!-- Link to your script file(s) and CSS in here somewhere -->
         <script src="scripts.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body onload="showHideShots()">
-        <div class="content">
-            <form id="game_settings" class="" action="javascript:void(0);">
-                <input type="radio" id="rps" name="game_choice" value="rps" checked="checked" onclick="showHideShots()">
-                <label for="rps">Play Rock, Paper, Scissors</label>
-                <br><br>
-                <input type="radio" id="rpsls" name="game_choice" value="rpsls" onclick="showHideShots()">
-                <label for="rpsls">Play Rock, Paper, Scissors, Lizard, Spock</label>
-                <br><br>
-                <input type="checkbox" id="opponent" name="mode" value="opponent" onclick="showHideShots()">
-                <label for="opponent">Play against an opponent</label>
-                <br class="shots"><br class="shots">
-                <input type="radio" id="rock" name="shot" value="rock" class="rps shots" checked="checked">
-                <label for="rock" class="rps shots">Rock</label>
-                <br class="shots"><br class="shots">
-                <input type="radio" id="paper" name="shot" value="paper" class="rps shots">
-                <label for="paper" class="rps shots">Paper</label>
-                <br class="shots"><br class="shots">
-                <input type="radio" id="scissors" name="shot" value="scissors" class="rps shots">
-                <label for="scissors" class="rps shots">Scissors</label>
-                <br class="rpsls shots"><br class="rpsls shots">
-                <input type="radio" id="lizard" name="shot" value="lizard" class="rpsls shots">
-                <label for="lizard" class="rpsls shots">Lizard</label>
-                <br class="rpsls shots"><br class="rpsls shots">
-                <input type="radio" id="spock" name="shot" value="spock" class="rpsls shots">
-                <label for="spock" class="rpsls shots">Spock</label>
-                <button type="submit" style="display: none;">Submit</button>
-            </form>
-            <div id="results" style="display: none;">
-                <h1 class="opponent_result" style="display: none;">OPPONENT</h1>
-                <img src="img/rock.jpg" alt="ROCK" class="opponent_result" id="opponent_img" style="display: none;">
-                <h1 class="player_result">PLAYER</h1>
-                <img src="img/rock.jpg" alt="ROCK" class="player_result" id="player_img">
-                <h1 id="game_result" style="display: none;"></h1>
-            </div>
-            <br>
-            <div class="buttons">
-                <button type="button" id="play" onclick="playGame()">Play</button>
-                <span class="button_space"></span>
-                <button type="button" id="reset" onclick="reset()">Reset</button>
-                <span class="button_space"></span>
-                <button type="button" id="help" onclick="showHelp()">Help</button>
-            </div>
-        </div>
-        <div class="help_page" style="display: none;">
-            <h3>Rules for Rock Paper Scissors:</h3>
-            <ul>
-                <li>Scissors CUTS Paper</li>
-                <li>Paper COVERS Rock</li>
-                <li>Rock CRUSHES Scissors</li>
-            </ul>
-            <h3>Rules for the Lizard-Spock Expansion of Rock Paper Scissors:</h3>
-            <ul>
-                <li>Scissors CUTS Paper</li>
-                <li>Paper COVERS Rock</li>
-                <li>Rock SMOOSHES Lizard</li>
-                <li>Lizard POISONS Spock</li>
-                <li>Spock SMASHES Scissors</li>
-                <li>Scissors DECAPITATES Lizard</li>
-                <li>Lizard EATS Paper</li>
-                <li>Paper DISPROVES Spock</li>
-                <li>Spock VAPORIZES Rock</li>
-                <li>Rock CRUSHES Scissors</li>
-            </ul>
-            <div class="buttons">
-                <button type="button" id="back" onclick="hideHelp()">Back</button>
-            </div>
-        </div>
-    <!-- Your interface markup goes here -->
-    <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
-        
+    <!-- beginning of the stuff you can see -->
+    <body>
+        <nav>
+            <button id="helpnav" onclick="helpNav()">Help</button>
+        </nav>
     </body>
+
 </html>
