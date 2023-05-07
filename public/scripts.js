@@ -8,11 +8,29 @@ function homeNav() {
 }
 
 function helpNav() {
+    reset();
     document.getElementById("home").className = "inactive";
     document.getElementById("disp").className = "inactive";
     document.getElementById("opponent").className = "inactive";
     document.getElementById("disp2").className = "inactive";
     document.getElementById("help").className = "active";
+}
+
+function reset() {
+    document.getElementById("help").className = "inactive";
+    document.getElementById("home").className = "active";
+    document.getElementById("opponent").className = "inactive";
+    document.getElementById("disp2").className = "inactive";
+    var ele = document.getElementsByName("option");
+    for(var i=0;i<ele.length;i++)
+        ele[i].checked = false;
+    var ele = document.getElementsByName("opp");
+        for(var i=0;i<ele.length;i++)
+            ele[i].checked = false;
+    document.getElementById("disp2").innerHTML
+            = "";
+    document.getElementById("disp").innerHTML
+            = "";
 }
 
 let game = None;
@@ -23,12 +41,10 @@ function display() {
         document.getElementById("disp").innerHTML = "Would you like a random draw or to play an opponent?"
         document.getElementById("opponent").className = "active";
         document.getElementById("disp2").className = "active";
-        game = "rps";
     } else if (document.getElementById("rpsls").checked) {
         document.getElementById("disp").innerHTML = "Would you like a random draw or to play an opponent?"
         document.getElementById("opponent").className = "active";
         document.getElementById("disp2").className = "active";
-        game = "rpsls";
     } else {
         document.getElementById("disp").innerHTML
                     = "You have not selected which game you would like to play.";
@@ -36,12 +52,10 @@ function display() {
 }
 
 function getGame() {
-    if (document.getElementById("opponent").checked) {
+    if (document.getElementById("opps").checked) {
         document.getElementById("disp2").innerHTML = "You have selected to play {} against {}.";
-        opponent = True;
     } else if (document.getElementById("no-opponent").checked) {
         document.getElementById("disp2").innerHTML = "You have selected to play {} against {}.";
-        opponent = False;
     } else {
         document.getElementById("disp2").innerHTML = "You have not selected an opponent style.";
 }
