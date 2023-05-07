@@ -46,6 +46,7 @@ function reset() {
 }
 
 function display() {
+    document.getElementById("disp").className = "active";
     if (document.getElementById("rps").checked) {
         document.getElementById("disp").innerHTML = "Would you like a random draw or to play an opponent?"
         document.getElementById("opponent").className = "active";
