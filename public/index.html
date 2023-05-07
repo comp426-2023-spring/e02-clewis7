@@ -27,6 +27,8 @@
                     <button type="button" onclick="display()">Submit</button>
                 </form><br>
             </div>
+
+
             <div id="disp" class="active">
 
             </div>
@@ -42,11 +44,39 @@
             <div id="disp2" class="inactive">
 
             </div>
+            <div id="game" class="inactive">
 
+            </div>
+            <div id="opponent" class="inactive">
 
+            </div>
+            <div id="opponent-options-rps" class="inactive">
+                <form>
+                    <input type="radio" id="rock" name="player" value="rock">
+                    <label for="rock">Rock</label><br>
+                    <input type="radio" id="paper" name="player" value="paper">
+                    <label for="paper">Paper</label><br>
+                    <input type="radio" id="scissors" name="player" value="scissors">
+                    <label for="scissors">Scissors</label><br>
+                    <button type="button" onclick="playOpp()">Submit</button>
+                </form><br>
+            </div>
 
-
-
+            <div id="opponent-options-rpsls" class="inactive">
+                <form>
+                    <input type="radio" id="rock2" name="player2" value="rock2">
+                    <label for="rock2">Rock</label><br>
+                    <input type="radio" id="paper2" name="player2" value="paper2">
+                    <label for="paper">Paper</label><br>
+                    <input type="radio" id="scissors2" name="player2" value="scissors2">
+                    <label for="scissors2">Scissors</label><br>
+                    <input type="radio" id="lizard" name="player2" value="lizard">
+                    <label for="lizard">Lizard</label><br>
+                    <input type="radio" id="spock" name="player2" value="spock">
+                    <label for="spock">Spock</label><br>
+                    <button type="button" onclick="playOpp()">Submit</button>
+                </form><br>
+            </div>
 
             <div id="help" class="inactive">
                 <h2>Rules for Rock Paper Scissors:</h2>
