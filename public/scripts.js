@@ -5,7 +5,6 @@
 function homeNav() {
     document.getElementById("help").className = "inactive";
     document.getElementById("home").className = "active";
-    document.getElementById("disp").className = "active";
 }
 
 function helpNav() {
@@ -16,17 +15,20 @@ function helpNav() {
     document.getElementById("help").className = "active";
 }
 
+let game = None;
+let opponent = None;
+
 function display() {
     if (document.getElementById("rps").checked) {
-        var game = "rps";
         document.getElementById("disp").innerHTML = "Would you like a random draw or to play an opponent?"
         document.getElementById("opponent").className = "active";
         document.getElementById("disp2").className = "active";
+        game = "rps";
     } else if (document.getElementById("rpsls").checked) {
-        var game = "rpsls";
         document.getElementById("disp").innerHTML = "Would you like a random draw or to play an opponent?"
         document.getElementById("opponent").className = "active";
         document.getElementById("disp2").className = "active";
+        game = "rpsls";
     } else {
         document.getElementById("disp").innerHTML
                     = "You have not selected which game you would like to play.";
@@ -34,15 +36,13 @@ function display() {
 }
 
 function getGame() {
-    var opponent = None;
     if (document.getElementById("opponent").checked) {
+        document.getElementById("disp2").innerHTML = "You have selected to play {} against {}.";
         opponent = True;
+    } else if (document.getElementById("no-opponent").checked) {
         document.getElementById("disp2").innerHTML = "You have selected to play {} against {}.";
-} else if (document.getElementById("no-opponent").checked) {
-        opponent = False; 
-        document.getElementById("disp2").innerHTML = "You have selected to play {} against {}.";
-} else {
-    document.getElementById("disp2").innerHTML
-    = "You have not selected an opponent style.";
+        opponent = False;
+    } else {
+        document.getElementById("disp2").innerHTML = "You have not selected an opponent style.";
 }
 }
